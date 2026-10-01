@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+
+<!-- Please dont change the structure of the XML -->
+
+<SOURCE>
+
+    <PRODUCT NAME="IMGLOAD">
+
+        <SERVER NAME="192.168.151.91" PORT="4080">
+       
+            <APPLICATION NAME="IMG">
+     
+                <APPLICATION_API NAME="GET_SUBSCRIBER_INFO">
+
+                    <API_FLAG NAME="1"/>
+    
+                    <API_TIMEOUT NAME="1"/>
+
+                    <API_ENTITY NAME="DNAINSTANCE1"/>
+
+                    <REGISTRATION_REQUEST><HEADER><ENTITY_NAME>SELFP</ENTITY_NAME><CONNECTION_TYPE>0</CONNECTION_TYPE></HEADER></REGISTRATION_REQUEST>
+
+                    <REQUEST><HEADER><TRANSACTION_ID>200066688100000</TRANSACTION_ID><REQUEST_TYPE>GET_SUBSCRIBER_INFO</REQUEST_TYPE><CONNECTION_TYPE>0</CONNECTION_TYPE></HEADER><BODY><PRIMARY_IMSI>100066688110000</PRIMARY_IMSI><PRIMARY_MSISDN>441234567890</PRIMARY_MSISDN><TYPE>D</TYPE><QUERY_TYPE>0</QUERY_TYPE></BODY></REQUEST>
+  
+                    <TOTAL_NUMBER_OF_MESSAGES NAME="20"/>
+
+                    <NUMBER_OF_MESSAGE NAME="4"/>
+
+                    <SLEEP_BETWEEN_REQUESTS NAME="1"/>
+
+                    <INCREMENT>
+                      
+                    <PRIMARY_IMSI NAME="100066688120001"/>
+                    <PRIMARY_MSISDN NAME="915066688120001"/>
+                    <TRANSACTION_ID NAME="99988990015028845001"/>
+
+
+                    <COUNT1 NAME="3"/>
+                    <COUNT2 NAME="3"/>
+                    <COUNT3 NAME="10"/>
+  
+                    </INCREMENT>                    
+
+                </APPLICATION_API>
+
+                <APPLICATION_API NAME="LERGD_ALLOCATE_MSISDN">
+
+                    <API_FLAG NAME="1"/>
+    
+                    <API_TIMEOUT NAME="5"/>
+
+                    <API_ENTITY NAME="DNAINSTANCE3"/>
+                    
+                    <REGISTRATION_REQUEST><HEADER><ENTITY_NAME>CBOS</ENTITY_NAME><CONNECTION_TYPE>0</CONNECTION_TYPE></HEADER></REGISTRATION_REQUEST>
+
+                    <REQUEST><HEADER><TRANSACTION_ID>200066688100000</TRANSACTION_ID><REQUEST_TYPE>LERGD_ALLOCATE_MSISDN</REQUEST_TYPE><CONNECTION_TYPE>0</CONNECTION_TYPE></HEADER><BODY><PRIMARY_IMSI>100066688110000</PRIMARY_IMSI><PRIMARY_MSISDN>441234567890</PRIMARY_MSISDN><ALLOCATION_TYPE>R</ALLOCATION_TYPE><ZIP_CODE>77018</ZIP_CODE><CHANNEL_ID>IVR</CHANNEL_ID></BODY></REQUEST>
+  
+                    <TOTAL_NUMBER_OF_MESSAGES NAME="100"/>
+
+                    <NUMBER_OF_MESSAGE NAME="2"/>
+
+                    <SLEEP_BETWEEN_REQUESTS NAME="2"/>
+
+                    <INCREMENT>
+
+                    <PRIMARY_IMSI NAME="100066688120000"/>
+                    <PRIMARY_MSISDN NAME="100066688120000"/>
+                    <TRANSACTION_ID NAME="99988990015028845000"/>
+
+                    <COUNT1 NAME="5"/>
+                    <COUNT2 NAME="5"/>
+                    <COUNT3 NAME="10"/>
+
+                    </INCREMENT>
+
+                </APPLICATION_API>
+
+                <APPLICATION_API NAME="ADD_SOC">
+
+                    <API_FLAG NAME="0"/>
+    
+                    <API_TIMEOUT NAME="1"/>
+
+                    <API_ENTITY NAME="DNAINSTANCE5"/>
+                    
+                    <REGISTRATION_REQUEST><HEADER><ENTITY_NAME>ITG</ENTITY_NAME><CONNECTION_TYPE>0</CONNECTION_TYPE></HEADER></REGISTRATION_REQUEST>
+
+                    <REQUEST><HEADER><TRANSACTION_ID>200066688100000</TRANSACTION_ID><REQUEST_TYPE>ADD_SOC</REQUEST_TYPE><CONNECTION_TYPE>0</CONNECTION_TYPE></HEADER><BODY><PRIMARY_IMSI>100066688110000</PRIMARY_IMSI><PRIMARY_MSISDN>441234567890</PRIMARY_MSISDN><SOCS><soc>VM</soc></SOCS></BODY></REQUEST>
+  
+                    <TOTAL_NUMBER_OF_MESSAGES NAME="10"/>
+
+                    <NUMBER_OF_MESSAGE NAME="1"/>
+
+                    <SLEEP_BETWEEN_REQUESTS NAME="1"/>
+
+                    <INCREMENT>
+
+                    <PRIMARY_IMSI NAME="100066688120000"/>
+                    <PRIMARY_MSISDN NAME="100066688120000"/>
+                    <TRANSACTION_ID NAME="99988990015028845000"/>
+
+                    <COUNT1 NAME="6"/>
+                    <COUNT2 NAME="2"/>
+                    <COUNT3 NAME="10"/>
+
+                    </INCREMENT>
+
+                </APPLICATION_API>
+
+            </APPLICATION>
+
+        </SERVER>
+
+    </PRODUCT>
+
+</SOURCE>

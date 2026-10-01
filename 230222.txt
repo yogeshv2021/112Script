@@ -1,0 +1,3 @@
+Current version - pyOpenSSL-19.1.0 to support robot
+upgraded version - pyOpenSSL-23.0.0 to support img requests lib
+
